@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perumahan Klaster Impian</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: rgb(7, 252, 252);
+        }
+
+        header {
+            background: linear-gradient(to right, #00aaff, );
+            color: rgb(8, 8, 8);
+            padding: 10px 15px;
+            text-align: center;
+        }
+
+        nav {
+            background: #333;
+            color: white;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: url('https://via.placeholder.com/600x200') no-repeat center center/cover;
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .hero h1 {
+            font-size: 3em;
+        }
+
+        .section {
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .feature {
+            flex: 1;
+            padding: 10px;
+            max-width: 300px;
+        }
+
+        .feature img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .section img {
+            width: 100%;
+            max-width: 600px;
+            margin-top: 20px;
+            cursor: pointer;
+
+        }
+
+        /* Styles for image zoom */
+        .zoomed {
+            animation: zoom 0.5s forwards;
+        }
+
+        @keyframes zoom {
+            0% {
+                transform: scale(1);
+            }
+
+            100% {
+                transform: scale(1.2);
+                /* Memperbesar gambar */
+            }
+        }
+
+        table {
+            width: 80%;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 2px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        thead {
+            background-color: #2afd23;
+            color: rgb(31, 4, 4);
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #92f5b0;
+        }
+
+        tbody tr:nth-child(odd) {
+            background-color: #e0f2fa;
+        }
+
+        .form-container {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            width: 90%;
+            max-width: 400px;
+            margin: 0 auto;
+            /* Center the form */
+            text-align: center;
+            /* Center the text inside the form */
+        }
+
+        .form-container input,
+        .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-map-container {
+            display: inline-flex;
+            justify-content: space-evenly;
+            align-items: flex-start;
+            gap: 20px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 500px;
+            max-width: 500px;
+            height: 230px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+
+        .social-icons a {
+            margin: 0 10px;
+            color: white;
+            text-decoration: none;
+        }
+
+        .slider {
+            overflow-x: auto;
+            scroll-behavior: smooth;
+        }
+
+        .slider img {
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1 class="vibrating-text">Perumahan Klaster Impian</h1>
+        <p>Hunian Nyaman di Lokasi Strategis</p>
+    </header>
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang Kami</a>
+        <a href="#pricing">Daftar Harga</a>
+        <a href="#contact">Kontak</a>
+        <a href="#login">Login</a>
+    </nav>
+    <div class="hero">
+        <img src="up.webp" width="100%" height="300">
+    </div>
+    <div class="section" id="about">
+        <h2>Tentang Kami</h2>
+        <p>Perumahan Klaster Impian adalah pengembang terpercaya yang menyediakan rumah nyaman dan modern dengan harga
+            terjangkau.</p>
+        <img src="tentang rumah.png" alt="Gambar Perumahan" style="width: 180%; border-radius: 30px;">
+    </div>
+    <div class="section" id="features">
+        <h2>Keunggulan</h2>
+        <br>
+        <div class="features">
+            <div class="feature">
+                <h3>Fasilitas Lengkap</h3>
+                <p>Kolam renang, taman bermain, dan keamanan 24 jam.</p>
+            </div>
+            <div class="feature">
+                <h3>Lokasi Strategis</h3>
+                <p>Berada di pusat kota dengan akses mudah ke fasilitas umum.</p>
+            </div>
+            <div class="feature">
+                <h3>Harga Terjangkau</h3>
+                <p>Berbagai pilihan rumah sesuai anggaran Anda.</p>
+            </div>
+        </div>
+    </div>
+    <div class="section" id="pricing">
+        <h2>Daftar Harga</h2>
+        <table border="2" style="width: 80%; margin: 0 auto; border-collapse: collapse;">
+            <thead>
+                <tr>
+                    <th>Tipe Rumah</th>
+                    <th>Luas</th>
+                    <th>Harga</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tipe A</td>
+                    <td>45 m²</td>
+                    <td>Rp 500.000.000</td>
+                </tr>
+                <tr>
+                    <td>Tipe B</td>
+                    <td>60 m²</td>
+                    <td>Rp 750.000.000</td>
+                </tr>
+                <tr>
+                    <td>Tipe C</td>
+                    <td>90 m²</td>
+                    <td>Rp 1.000.000.000</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="section1" id="contact">
+        <div class="form-container">
+            <h2>Pesan Sekarang</h2>
+            <form>
+                <input type="text" placeholder="Nama Anda" required>
+                <input type="email" placeholder="Email Anda" required>
+                <textarea placeholder="Pesan Anda" rows="5" required></textarea>
+                <button type="submit"
+                    style="padding: 10px 20px; background: #4CAF50; color: white; border: none; border-radius: 5px;">Kirim</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="section slider" id="gallery">
+        <h2>Galeri Perumahan</h2>
+        <img src="rumah 1.jpg" onclick="zoomImage(this)">
+        <img src="rumah 2.jpg" height="200px" onclick="zoomImage(this)">
+        <img src="rumah 3.jpg" height="200px" onclick="zoomImage(this)">
+    </div>
+    <div class="section" id="login">
+        <div class="login-map-container">
+            <div class="form-container">
+                <h2>Login</h2>
+                <form>
+                    <input type="email" placeholder="Email" required>
+                    <input type="password" placeholder="Password" required>
+                    <button type="submit"
+                        style="padding: 10px 20px; background: #4CAF50; color: white; border: none; border-radius: 5px;">Login</button>
+                </form>
+            </div>
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d126916.49075670153!2d106.68942929259854!3d-6.2293867111069475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e4e1f28c6b%3A0x400b36d9e0b2b40!2sJakarta%2C%20Indonesia!5e0!3m2!1sen!2sid!4v1695464851234!5m2!1sen!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>Ikuti kami di Media Sosial</p>
+        <div class="social-icons">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>&copy; 2024 Perumahan Klaster Impian. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        function zoomImage(img) {
+            img.classList.add("zoomed");
+            // Reset the class after animation duration to allow re-triggering
+            setTimeout(() => {
+                img.classList.remove("zoomed");
+            }, 500); // 500ms matches the animation duration
+        }
+    </script>
+</body>
+
+</html>
